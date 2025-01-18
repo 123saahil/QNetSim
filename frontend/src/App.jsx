@@ -1,5 +1,6 @@
 import Hyperspeed from "./components/Hyperspeed/Hyperspeed";
 import Title from "./components/Title";
+
 function App() {
   const handleAnimationComplete = () => {
     console.log("Animation completed!");
@@ -10,14 +11,16 @@ function App() {
         <div className="fixed top-0 -z-10 h-full w-full">
           <div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950"></div>
           <div>
-            <Hyperspeed></Hyperspeed>
+            <div>
+              <Hyperspeed></Hyperspeed>
+            </div>
             <Title
               text="Quantum Internet Simulator for Secured Network"
               delay={150}
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-              className="text-4xl pt-10 "
+              className="text-4xl pt-10 justify-center"
             ></Title>
           </div>
         </div>
